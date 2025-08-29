@@ -1,0 +1,1 @@
+{"env":"mock/env_timeseries.json","soil":"mock/soil_moisture.json","irrigation":"mock/irrigation_devices.json","pest":"mock/pest_alerts.json","yield":"mock/yield_stats.json","logistics":"mock/logistics.json","metadata":"mock/metadata.json"}

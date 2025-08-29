@@ -1,0 +1,76 @@
+:root {
+  --bg: #0b1220;
+  --card: rgba(255,255,255,0.04);
+  --card-border: rgba(255,255,255,0.1);
+  --text: #dbe6ff;
+  --subtext: #9ecbff;
+  --accent: #42d6ff;
+}
+
+.dashboard-root {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Links & buttons unified */
+a { color: var(--subtext); text-decoration: none; transition: color .2s ease, background-color .2s ease; }
+a:hover { color: var(--text); }
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  color: var(--subtext);
+  background: transparent;
+}
+.btn.primary { color: var(--text); background: var(--card); border-color: var(--card-border); }
+.btn:hover { background: rgba(255,255,255,0.06); }
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  color: var(--subtext);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.card-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.action-btn {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--subtext);
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fullscreen {
+  position: fixed !important;
+  inset: 8px !important;
+  z-index: 9999 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Chart height tweak for small screens */
+@media (max-width: 768px) { .chart { height: 260px !important; } }
+
+/* Header nav states */
+.app-header .nav { color: var(--subtext); }
+.app-header .nav:hover { background: var(--card); }
+.app-header .active { background: var(--card); border: 1px solid var(--card-border); color: var(--text); }
+
+
